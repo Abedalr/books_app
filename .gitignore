@@ -1,0 +1,57 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio artifacts
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ==========================================
+# قسم الأمان والخصوصية (إضافة المهندس عبد الرحمن)
+# ==========================================
+
+# منع رفع ملفات الإعدادات الحساسة لـ Firebase
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+
+# منع رفع مفاتيح توقيع التطبيق (الخاصة بالرفع للمتجر)
+*.jks
+*.keystore
+*.p12
+*.pem
+
+# منع رفع ملفات البيئة التي تحتوي على API Keys (مثل Gemini API)
+.env

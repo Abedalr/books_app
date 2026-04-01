@@ -1,0 +1,94 @@
+name: books
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- دعم اللغة العربية والجهات (RTL) ---
+  flutter_localizations:
+    sdk: flutter
+
+  # --- Backend & Auth ---
+  firebase_core: ^4.4.0
+  firebase_auth: ^6.1.4
+  cloud_firestore: ^6.1.2
+  google_sign_in: ^6.2.1
+  firebase_storage: ^13.0.6
+  firebase_crashlytics: ^5.0.7
+  connectivity_plus: ^7.0.0
+  share_plus: ^12.0.1
+  # استخدم هذه الإصدارات تحديداً لحل التعارض:
+  googleapis: ^13.2.0
+  googleapis_auth: ^1.6.0
+
+
+  # --- Local Storage (Database) ---
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # --- Notifications ---flutter clean
+  #flutter pub get
+  flutter_local_notifications: ^20.1.0
+
+  # --- API & Networking ---
+  http: ^1.2.0
+  dio: ^5.4.0
+  url_launcher: ^6.2.0
+  open_filex: ^4.7.0
+  google_generative_ai: ^0.4.7
+  flutter_markdown: ^0.7.7+1
+
+
+  # --- State Management ---
+  provider: ^6.1.2
+
+  # --- Files & PDF ---
+  flutter_pdfview: ^1.3.2
+  syncfusion_flutter_pdfviewer: ^32.2.8
+  path_provider: ^2.1.2
+  image_picker: ^1.2.1
+
+  # --- UI, Icons & Animations ---
+  lottie: ^3.3.2
+  shimmer: ^3.0.0
+  cached_network_image: ^3.3.1
+  flutter_rating_bar: ^4.0.1
+  font_awesome_flutter: ^10.7.0
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.5.4
+  fl_chart: ^1.2.0
+  file_picker: ^10.3.10
+  path: ^1.9.1
+  flutter_launcher_icons: ^0.14.4
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+# --- إعدادات أيقونة التطبيق (رف الكتب) ---
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_logo.png"
+  adaptive_icon_background: "#101820"
+  adaptive_icon_foreground: "assets/images/app_logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/animations/book_loader.json
+    - assets/images/book_one.jpg
+    - assets/images/book_tow.jpg
+    - assets/images/book_three.jpg
+    - assets/images/app_logo.png # تأكد من وضع الصورة بهذا الاسم في هذا المسار
